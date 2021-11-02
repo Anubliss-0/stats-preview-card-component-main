@@ -1,0 +1,88 @@
+body {
+    background-color: #0A0C1C;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    
+}
+
+.rectangle {
+    flex-basis: 1110px;
+    background-color: #1B1937;
+    height: 29vw;
+    display: flex;    
+    max-height: 446px;
+    border-radius: 8px;
+}
+
+
+
+.main-text {
+    flex-basis: 570px;
+    height: 446px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.main-text h1 {
+    margin: 71px 72px 0;
+    text-align: left;
+    width: 403px;
+    height: 88px;
+    font-family: 'Inter', sans-serif;;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;    
+}
+
+/*Can I get this to slide underneith the text?*/
+.image-container {
+    flex-basis: 540px;
+    /*background-image: url("images/image-header-desktop.jpg");*/
+    border-radius: 0 8px 8px 0;
+    background-color: #AB5CDB;       
+    overflow: hidden; 
+      
+}
+
+.image-container img {
+    opacity: 0.75;
+    mix-blend-mode: multiply; 
+}
+
+/*-----Portrait screen-----*/
+
+@media only screen and (max-width: 1110px) {
+    .rectangle {
+        flex-direction: column-reverse;
+        height: 780px;
+        min-width: 327px;
+        max-width: 540px;
+        min-height: 780px; 
+        height: 780px;
+        margin-top: 88px;
+    }
+    .main-text {
+        
+    }
+    .image-container {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        flex-basis: 240px;
+        
+    }
+    .image-container img {
+        height: auto;
+        width: 100%;
+    }
+}
