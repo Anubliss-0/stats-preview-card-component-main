@@ -75,7 +75,7 @@ h1 span {
     color: #FFFFFF;
 }
 
-#figure {
+.figure {
     font-family: Inter;
     font-style: normal;
     font-weight: bold;
@@ -85,7 +85,7 @@ h1 span {
     text-transform: none;
 }
 
-.stat-table span {
+.opacity {
     opacity: 0.6;
 }
 /*Can I get this to slide underneith the text?*/
