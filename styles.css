@@ -64,7 +64,7 @@ body {
 @media only screen and (max-width: 1110px) {
     .rectangle {
         flex-direction: column-reverse;
-        height: 780px;
+        height: 90vh;
         min-width: 327px;
         max-width: 540px;
         min-height: 780px; 
