@@ -44,6 +44,10 @@ body {
     line-height: 44px;    
 }
 
+h1 span {
+    color:#AB5CDB;    
+}
+
 /*Can I get this to slide underneith the text?*/
 .image-container {
     flex-basis: 540px;
@@ -57,6 +61,10 @@ body {
 .image-container img {
     opacity: 0.75;
     mix-blend-mode: multiply; 
+}
+
+.image-container img:last-child {
+    display: none;
 }
 
 /*-----Portrait screen-----*/
@@ -79,10 +87,19 @@ body {
         width: 100%;
         overflow: hidden;
         flex-basis: 240px;
+        border-radius: 8px 8px 0 0;
         
     }
     .image-container img {
         height: auto;
         width: 100%;
+    }
+
+    .image-container img:first-child {
+        display: none;
+    }
+
+    .image-container img:last-child {
+        display: flex;
     }
 }
